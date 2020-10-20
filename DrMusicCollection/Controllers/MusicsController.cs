@@ -9,6 +9,9 @@ using ModelLib.Model;
 
 namespace DrMusicCollection.Controllers
 {
+
+    // Azure link: http://musicservice.azurewebsites.net/api/Musics
+
     [Route("api/[controller]")]
     [ApiController]
     public class MusicsController : ControllerBase
