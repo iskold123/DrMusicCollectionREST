@@ -20,6 +20,8 @@ namespace DrMusicCollection.Controllers
             new Music("Ung Kniv", "Minds of 99", 175, 2018)
         };
 
+        // type this URL for get method
+        // http://localhost:51068/api/Musics
         // GET: api/<MusicsController>
         [HttpGet]
         public IEnumerable<Music> Get()
