@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DrMusicCollection\DrMusicCollection.csproj" />
+    <ProjectReference Include="..\DrMusicCollection\DRMusicREST.csproj" />
   </ItemGroup>
 
 </Project>
