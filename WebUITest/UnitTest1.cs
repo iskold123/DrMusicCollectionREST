@@ -20,8 +20,8 @@ namespace WebUITest
         [ClassInitialize]
         public static void SetUp(TestContext context)
         {
-            _driver = new ChromeDriver(DriveFolder);
-            //_driver = new FirefoxDriver(DriveFolder);
+            //_driver = new ChromeDriver(DriveFolder);
+            _driver = new FirefoxDriver(DriveFolder);
         }
 
         [ClassCleanup]
@@ -42,8 +42,8 @@ namespace WebUITest
         [TestMethod]
         public void TestAfArtist()
         {
-            _driver.Navigate().GoToUrl("https://drmusichtml.azurewebsites.net/");
-            //_driver.Navigate().GoToUrl("http://localhost:3000/");
+            //_driver.Navigate().GoToUrl("https://drmusichtml.azurewebsites.net/");
+            _driver.Navigate().GoToUrl("http://localhost:3000/");
 
             WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(1));
             IWebElement records = wait.Until(d => d.FindElement(By.Id("recordsId")));
