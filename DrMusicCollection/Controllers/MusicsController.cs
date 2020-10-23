@@ -33,6 +33,13 @@ namespace DrMusicCollection.Controllers
             return _data;
         }
 
+        [HttpGet]
+        [Route("Artist/{substring}")]
+        public IEnumerable<Music> GetFromSubstring(string substring)
+        {
+            return _data.FindAll(i => i.Artist.Contains(substring));
+        }
+
         //// GET api/<MusicsController>/5
         //[HttpGet("{id}")]
         //public string Get(int id)
