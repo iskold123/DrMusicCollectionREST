@@ -10,7 +10,7 @@ using ModelLib.Model;
 namespace DrMusicCollection.Controllers
 {
 
-    // Azure link: http://musicservice.azurewebsites.net/api/Musics
+    // Azure link: http://musicservice.azurewebsites.net/api/musics/artist/
     //Azure link mads: http://drmusic.azurewebsites.net/api/musics
 
     [Route("api/[controller]")]

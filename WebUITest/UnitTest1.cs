@@ -42,11 +42,11 @@ namespace WebUITest
         [TestMethod]
         public void TestAfArtist()
         {
-            //_driver.Navigate().GoToUrl("https://drmusichtml.azurewebsites.net/");
-            _driver.Navigate().GoToUrl("http://localhost:3000/");
+           //_driver.Navigate().GoToUrl("http://musicservice.azurewebsites.net/api/musics");
+           _driver.Navigate().GoToUrl("http://localhost:3000/");
 
-            WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(1));
-            IWebElement records = wait.Until(d => d.FindElement(By.Id("recordsId")));
+            WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
+            IWebElement records = wait.Until(d => d.FindElement(By.Id("id")));
             Assert.IsTrue(records.Text.Contains("Tessa"));
 
         }
