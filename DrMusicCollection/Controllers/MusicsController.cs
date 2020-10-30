@@ -40,6 +40,15 @@ namespace DrMusicCollection.Controllers
             return _data.FindAll(i => i.Artist.Contains(substring));
         }
 
+        // POST api/<MusicsController>
+        [HttpPost]
+        public void Post([FromBody] Music value)
+        {
+            
+            _data.Add(value);
+
+        }
+
         //// GET api/<MusicsController>/5
         //[HttpGet("{id}")]
         //public string Get(int id)
@@ -47,11 +56,7 @@ namespace DrMusicCollection.Controllers
         //    return "value";
         //}
 
-        //// POST api/<MusicsController>
-        //[HttpPost]
-        //public void Post([FromBody] string value)
-        //{
-        //}
+
 
         //// PUT api/<MusicsController>/5
         //[HttpPut("{id}")]
